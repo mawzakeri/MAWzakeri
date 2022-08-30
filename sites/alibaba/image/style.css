@@ -1,0 +1,757 @@
+@import "style-mobile.css";
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background:rgb(179, 179, 179);
+    border-radius: 10px;
+} 
+
+@media screen and (min-width:992.6px){
+.hidden-pc{
+    display: none !important;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.nav-pc{
+    display: flex;
+    justify-content: space-between;
+    padding:8px 10px;
+    background-color: white;
+    height: auto;
+    overflow: hidden;
+}
+.list-nav-pc{
+    display: flex;
+}
+.logo-pc{
+    display: flex;
+}
+.description-logo{
+    display: flex;
+    flex-direction: column;
+}
+.description-logo a:last-child{
+    color:#4b5259;
+    font-size: 12px;
+    font-weight: 100;
+}
+.description-logo{
+    margin-top: 3px;
+}
+.user-nav-pc {
+    display: flex;
+    align-items: center;
+}
+.user-nav-pc p{
+    margin-left:40px;
+}
+.user-nav-pc h2{
+    color:#000000;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: "mamal";
+}
+.ul-nav-pc{
+    display: flex;
+    width: 100%;
+    justify-items: center;
+}
+.li-nav-pc{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    background: rgba(250, 250, 250, 0.4);
+}
+
+.li-nav-pc:hover{
+    background-color:#4b5259;
+    transition: 0.3s;
+    border-radius: 25px 0 25px 0;
+}
+.li-nav-pc:hover a{
+    color: #fdb713;
+}
+.alink-nav-pc{
+    font-size: 16px;
+    font-weight: 900;
+    color: #4b5259;
+}
+.header-pc{
+    background: url("https://cdn.alibaba.ir/h/desktop/assets/images/hero/hero.jpg-a1e2c857.jpg");
+    height: 320px;
+    background-size: cover;
+    background-position:center;
+    padding: 0;
+}
+.alert{
+    background: #ffe19c;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+.alert a{
+    font-size: 16px;
+    font-weight: 300;
+    border-bottom: 1px solid black;
+    margin-right: 4px;
+}
+.alert p{
+    display: inline-block;
+}
+.icon-zarb{
+    float: left;
+}
+main{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    bottom:90px;
+}
+.main-pc{
+    display: flex;
+    width: 95%;
+    flex-wrap: wrap;
+}
+.order{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    border: .5px solid rgb(233, 233, 233);
+    box-shadow: 0px 0px 3px rgb(233, 233, 233);
+    margin-bottom: 30px;
+}
+.description-order-pc{
+    color: #5a5a5a;
+    font-size: 15.5px !important;
+    font-weight: 900;
+}
+.select-type-order{
+    height: 85px;
+    overflow: hidden;
+    display: flex;
+    flex-basis: 100%;
+}
+.type-order{
+    display: flex;
+    flex-basis: 100%;
+    border-bottom: 1px solid rgb(233, 233, 233);
+    justify-content: center;
+}
+.new-span-pc{
+    position: absolute;
+    background: rgb(127, 219, 127);
+    font-size: 12px;
+    padding: 2px 10px;
+    border-radius: 20px;
+    left: 15%;
+    top:30%;
+    font-weight: 100;
+}
+.type-order li{
+    display: flex;
+    padding: 15px 40px;
+    flex-direction: column;
+    align-items: center;
+}
+.type-order li p{
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+.selected-p{
+    color: #0077DB;
+}
+.type-order a{
+    position: relative;
+    overflow: hidden;
+}
+.selected{
+    width: 120px;
+    background-color:#0077DB;
+    border-radius: 13px;
+    height: 7.5px;
+    position: absolute;
+    bottom: -3px;
+} 
+.form-order-container{
+    display: flex;
+    flex-basis: 100%;
+}
+.form-order{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 15px;
+    width: 100%;
+    height: 175px;
+    flex-basis: 100%;
+    background-color: white;
+}
+.style-inputs{
+    border: 1px solid rgb(173, 173, 173);
+    border-radius: 8px;
+    outline: none;
+    height: 48px;
+}
+label{
+    z-index: 1;
+    font-size: 15px;
+}
+.style-inputs:focus{
+    outline: none;
+}
+.parent-all-inputs{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 12px;
+}
+.parent-selection{
+    height: 15px;
+}
+.selection{
+    border: none;
+    outline: none;
+    width: 120px;
+}
+.selection:focus{
+    border:2px solid rgb(0, 95, 238);
+    border-radius: 50px;
+    outline: none;
+}
+.container-inputs{
+    align-items: center;
+    display: flex;
+    margin-left: 7px;
+    position: relative;
+}
+.container-inputs input{
+    width: 100%;
+}
+.options{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(179, 241, 241);
+}
+.sticy-left{
+    border-radius:8px 0px 0px 8px;
+}
+.sticy-right{
+    border-radius: 0px 8px 8px 0px;
+}
+.is-first{
+    position: relative;
+    flex-basis: 50%;
+}
+.pos-rel{
+    position: relative;
+}
+.big-in{
+    flex:0 1 41.666666666666664%;
+}
+.mid-in{
+    flex:0 1 25%;
+}
+.low-in{
+    flex:0 1 16.666666666666668%;
+}
+.lower-in{
+    flex:0 0 16.666666666666668%;
+}
+label{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    line-height: 48px;
+    margin-right: 10px;
+    color: rgb(143, 143, 143);
+    font-weight: 500;
+    cursor: text;
+}
+#in-br{
+    background-color: rgb(249, 250, 250);
+}
+input{
+    padding: 5px 10px;
+    overflow: hidden;
+}
+.style-submit{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: #fdb713;
+    color: black;
+    font-weight: 900;
+    font-size: 19.5px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.style-submit:hover{
+    background:#d69b10;
+    transition: 0.15s;
+}
+.center-icon-input{
+    position: absolute;
+    right: 46.5%;
+    padding: 8px;
+    background: rgb(247, 247, 247);
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    z-index: 1;
+    cursor: no-drop;
+}
+.container-inputs a{
+    width: 100%;
+    cursor: pointer;
+}
+.alibabaplus{
+    display: flex;
+    flex:0 0 100%;
+    background: white;
+    border-radius: 10px;
+    border: .5px solid rgb(233, 233, 233);
+    box-shadow: 0px 0px 3px rgb(233, 233, 233);
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    padding:15px;
+    margin-bottom: 30px;
+}
+.aliplusicon{
+    position: relative;
+    flex:0 0 15%;
+    display: flex;
+    justify-items: center;
+    height: 100%;
+    margin-left: 10px;
+}
+.aliplusicon span{
+    position: absolute;
+    background: rgb(127, 219, 127);
+    font-size: 12px;
+    padding: 2px 10px;
+    border-radius: 20px;
+    left:22%;
+    top:13%;
+    font-weight: 100;
+}
+.aliplusicon i{
+   flex:0 0 100%;
+   height: 100%;
+   position: relative;
+   display: flex;
+   align-items: center;
+}
+.aliplusicon img{
+    flex:0 0 100%;
+    position: absolute;
+    left:0;
+ }
+.alibabaplus h2{
+    font-size: 20px;
+}
+.alibabaplus p{
+    font-size: 17px;
+}
+.aliplusdescription{
+    flex: 0 0 50%;
+}
+.alipluslink a{
+    padding: 10px 15px;
+    border-radius: 30px;
+    color: white;
+    font-size: 12px;
+    background: black;
+}
+.slider-pc{
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.container-sections{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.section-1,.section-2{
+    display: flex;
+    flex-basis: 50%;
+    border-radius: 8px;
+    height: 232px;
+    overflow: hidden;
+}
+.section-1{
+    margin-left: 15px;
+}
+.slider-span{
+    justify-content: center;
+}
+.description-app-pc{
+    background-color: white;
+    background-image: url("https://cdn.alibaba.ir/h/desktop/assets/images/app-mobile/diagonal-ovals.png-0315dd86.png");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-basis: 100%;
+    height: 315px;
+    justify-content: space-evenly;
+    border: .5px solid rgb(233, 233, 233);
+    box-shadow: 0px 0px 3px rgb(233, 233, 233);
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+.dpt-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    padding: 40px 0;
+    flex-basis: 30%;
+}
+.dpt-txt h2{
+    font-size: 18px;
+    font-family: "mamal";
+}
+.dpt-txt p{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(92, 92, 92);
+}
+.dpt-img{
+    display: flex;
+}
+.dpt-img img{
+    height: 95%;
+    align-self:flex-end ;
+}
+.linked-app-phone{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #0077DB;
+    width: 200px;
+    height: 45px;
+    justify-content: center;
+    color: white;
+    border-radius: 8px;
+}
+.linked-app-phone a{
+    font-size: 16px;
+    color: white;
+}
+.txt-child-dpt{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    height: 60px;
+}
+.inf-download-app{
+    display: flex;
+    width: 200px;
+    height: auto;
+    overflow: hidden;
+
+}
+.inf-download-app img{
+    width:20px;
+    height: 20px;
+    margin-left: 5px;
+}
+.inf-download-app p{
+    font-size: 10px;
+    margin-top: 7px;
+    color: rgb(124, 124, 124);
+}
+.questions{
+    flex-basis: 100%;
+    margin-bottom: 30px;
+}
+.main-ques{
+    flex-basis: 100%;
+}
+.main-ques h2{
+    font-size: 26px;
+}
+.main-contact img{
+    width: 450px;
+    height: 330px;
+    margin-right: 192px;
+    float: left;
+}
+.p-user-pc{
+    font-size: 14.5px;
+    line-height: 30px;
+    color: rgb(61, 61, 61);
+}
+.hyper{
+    font-size: 20px;
+}
+.hyper-a{
+    font-size: 16px;
+}
+footer.hidden-phone{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background: white;
+    align-items: center;
+    flex-direction: column;
+}
+section.container-footer{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 30px 0;
+}
+.head-footer-pc{
+    display: flex;
+    flex: 0 0 100%;
+    justify-content: space-around;
+    height: 120px;
+    margin-bottom: 10px;
+}
+.item-head-footer-pc{
+    display: flex;
+    flex:0 1 33%;
+    align-items: center;
+}
+.item-head-footer-pc img{
+    width: 89px;
+    height: 89px;
+}
+.text-item-head-footer-pc h2{
+    font-size: 20px;
+}
+.text-item-head-footer-pc p{
+    font-size: 15px;
+    color: rgb(92, 92, 92);
+}
+.lalezar{
+    font-family: lalezar;
+}
+.f-header{
+    font-size: 20px;
+}
+.resize-alink{
+    font-size: 13px !important;
+}
+.app-download-footer-pc{
+    display: flex;
+    flex: 0 1 100%;
+    padding: 0 0 35px 0;
+    border-bottom: 0.5px solid rgb(199, 199, 199);
+    align-items: center;
+}
+.description-app-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 50px;
+}
+.desc-text-footer {
+    display: flex;
+}
+.desc-text-footer p{
+    font-size: 13px;
+    margin-left: 10px;
+    color:rgb(34, 34, 34);
+}
+.download-app-link-footer{
+    display: flex;
+    flex: 0 1 50%;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 70px;
+}
+.download-footer-button{
+    display: flex;
+    flex: 0 1 23%;
+    height: 45px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgb(236, 236, 236);
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.download-footer-button p{
+    font-size: 13px;
+}
+.contact-me-footer-pc{
+    display: flex;
+    height: 280px;
+    width: 100%;
+    padding: 25px 0;
+    border-bottom: 0.5px solid lightgray ;
+    overflow: hidden;
+}
+.help-footer{
+    display: flex;
+    height: auto;
+    overflow: hidden;
+    justify-content: space-between;
+    flex-direction:column;
+    width: 55%;
+}
+.items-for-help{
+    display: flex;
+    height: auto;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.item-help-footer{
+    display: flex;
+    flex-direction: column;
+}
+.item-help-footer a{
+    margin-bottom: 10px;
+}
+.logo-mog-footer{
+    display: flex;
+    height: auto;
+    overflow: hidden;
+    flex-direction: column;
+    width: 45%;
+    justify-content: space-between;
+}
+.item-help-footer h2{
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+.item-help-footer a{
+    font-size: 15px;
+}
+.recommend a{
+    font-size: 12px;
+    color: rgb(143, 143, 143);
+}
+.recommend span{
+    font-size: 12px;
+    color: rgb(143, 143, 143);
+}
+.nphone{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    padding: 0;
+}
+.nphone-text{
+    display: flex;
+}
+.space-pip{
+    margin: 0 8px;
+}
+.nphone p{
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+.logo-site-footer img{
+    width: 36%;
+    height: 30px;
+}
+.logo-site-footer{
+    display: flex;
+    justify-content:flex-end;
+    overflow: hidden;
+}
+.mog-footer{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content:flex-end;
+    overflow: hidden;
+}
+.mog-style{
+    padding: 5px;
+    border: 0.5px solid lightgray;
+    border-radius: 10px;
+    display: flex;
+    margin-right: 10px;
+}
+.mog-style img{
+    width: 69px;
+    height: 69px;
+}
+.alink-user{
+    font-size: 14.5px;
+}
+.copy-footer-pc{
+    display: flex;
+}
+.copy-text-pc{
+    width: 70%;
+}
+.copy-text-pc p{
+    color: #686868;
+    font-size: 12.5px;
+    margin: 7px 0;
+}
+.logo-social-pc{
+    padding: 10px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.max-width-1200{
+    max-width: 1200px ;
+    display: flex;
+    margin: 0 auto;
+}
+}
+@media screen and (min-width:993px) and ( max-width:1130px){
+    .description-app-footer{
+        width: 60% !important;
+    }
+    .download-app-link-footer{
+        width: 40%;
+    }
+    .desc-text-footer p{
+        font-size:12px !important;
+    }
+    .desc-text-footer a{
+        font-size:12px !important;
+    }
+    .help-footer{
+        display: flex;
+        height: auto;
+        overflow: hidden;
+        justify-content: space-between;
+        flex-direction:column;
+        width: 45%;
+    }
+    .logo-mog-footer{
+        display: flex;
+        height: auto;
+        overflow: hidden;
+        flex-direction: column;
+        width: 55%;
+        justify-content: space-between;
+    }
+    .copy-text-pc p{
+        color: #686868;
+        font-size: 10px;
+        margin: 7px 0;
+    }
+    .description-order-pc{
+        font-size: 12px !important;
+    }
+    label{
+        font-size: 12.5px !important;
+    }
+}
